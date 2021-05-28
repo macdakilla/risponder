@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<base href="/">
+	<title>О конфликтах Sass и сравнительно новых возможностей CSS | Risponder - всё об IT</title>
+	<meta name="description" content="Сравнительно недавно в CSS появилось много интересных возможностей, таких, как CSS-переменные и новые функции. Хотя всё это и может сильно упростить жизнь веб-дизайнерам, эти возможности способны неожиданными способами взаимодействовать с CSS-препроцессорами вроде Sass.">
+	<meta name="viewport" content="width=device-width">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="images/favicon/site.webmanifest">
+	<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta property="og:image" content="img/articles/2020/2020-07-20-o-konfliktah-sass-i-sravnitelno-novyh-vozmozhnostej-css/1.jpg">
+	<meta name="theme-color" content="#202225">
+	<link rel="stylesheet" href="css/app.min.css">
+	<script data-ad-client="ca-pub-3300515980317605" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+	
+		ym(65935744, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true
+		});
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/65935744" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+	<link rel="alternate" type="application/rss+xml" title="Risponder - всё об IT" href="/feed.xml">
+</head>
+
+<body class="ispage">
+	
+<header class="top-line">
+
+    <a href="/" class="logo logo-liter">Risponder</a>
+
+    <div class="search-wrap">
+        <div class="search" title="Поиск по сайту..."><i class="fa fa-search"></i></div>
+        <div class="search-field">
+            <form action="/search.html" id="cse-search-box">
+                <input type="hidden" name="cx" value="015782681705708720740:k67sy3q_2gw" />
+                <input type="hidden" name="cof" value="FORID:10" />
+                <input type="hidden" name="ie" value="UTF-8" />
+                <input type="text" name="q" placeholder="Поиск по сайту..." />
+            </form>
+        </div>
+    </div>
+
+    <div class="mobile-menu-button"><i class="fa fa-bars"></i> Меню</div>
+    <nav class="main-menu top-menu">
+<ul>
+    <li><a href="blog/courses/">Курсы</a></li>
+    <li><a href="blog/articles/">Статьи</a></li>
+    <li><a href="blog/it-news/">Новости it</a></li>
+    <li><a href="blog/books/">Книги</a></li>
+    <li><a href="blog/soft/">Софт</a></li>
+    <li><a href="about.html">О сайте</a></li>
+</ul>
+    </nav>
+
+</header>
+
+    <header class="page-header overlay" style="background-image: url(img/articles/2020/2020-07-20-o-konfliktah-sass-i-sravnitelno-novyh-vozmozhnostej-css/1.jpg);">
+		<div class="page-header-content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-7 col-md-8">
+
+						<div class="page-header-meta">
+							<a href="blog/articles" class="page-category-link">Статьи</a> <span class="date">20/07/2020</span>
+							
+							<h1>О конфликтах Sass и сравнительно новых возможностей CSS</h1>
+							<div class="item-social">
+								<div class="item-comments" title="Кол-во комментариев">
+									<i class="fa fa-comments"></i>
+									<a href="/blog/articles/2020-07-20-o-konfliktah-sass-i-sravnitelno-novyh-vozmozhnostej-css.html#disqus_thread" class="item-comments-count"></a>
+								</div>
+								<i class="fa fa-share-alt" title="Поедлиться в соц. сетях"></i>
+								<div class="likely likely-custom"  data-url="https://risponder.ru/blog/articles/2020-07-20-o-konfliktah-sass-i-sravnitelno-novyh-vozmozhnostej-css.html" data-media="https://risponder.ru/img/articles/2020/2020-07-20-o-konfliktah-sass-i-sravnitelno-novyh-vozmozhnostej-css/1.jpg" data-title="О конфликтах Sass и сравнительно новых возможностей CSS">
+									<div class="vkontakte" title="Поделиться Вконтакте">Вконтакте</div>
+									<div class="facebook" title="Поделиться в facebook">Facebook</div>
+									<div class="twitter" title="Поделиться в twitter">Twitter</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div class="article-content">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-md-8">
+
+					<article class="main-article">
+						<nav class="breadcrumbs">
+							<ul>
+								<li>
+									<a href="/">Главная</a>
+								</li>
+								<li>
+									<a href="blog/articles">Статьи</a>
+								</li>
+								<li class="active">
+									О конфликтах Sass и сравнительно новых возможностей CSS
+								</li>
+							</ul>
+						</nav>
+						<div class="article-body">
+
+							<div class="ad article-top-ad">
+								<!-- Гориз -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3300515980317605"
+     data-ad-slot="6609240498"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+							</div>
+
+							<blockquote>Сравнительно недавно в CSS появилось много интересных возможностей, таких, как CSS-переменные и новые функции. Хотя всё это и может сильно упростить жизнь веб-дизайнерам, эти возможности способны неожиданными способами взаимодействовать с CSS-препроцессорами вроде Sass</blockquote>
+
+<p>Автор материала, перевод которого мы сегодня публикуем, расскажет о том, с какими проблемами ей довелось столкнуться, о том, как она с ними справлялась, и о том, почему она считает, что без Sass в наши дни всё ещё обойтись нельзя.</p>
+
+<h2>Ошибки</h2>
+
+<p>Если вы экспериментировали с CSS-функциями min() и max(), то, используя разные единицы измерения, могли столкнуться с сообщениями об ошибках, наподобие такой: Incompatible units: vh and em.</p>
+
+<img src="img/articles/2020/2020-07-20-o-konfliktah-sass-i-sravnitelno-novyh-vozmozhnostej-css/2.png" alt="Сообщение об ошибке, возникающее при использовании различных единиц измерения в функциях min() и max()">
+
+<p>Это сообщение выводится из-за того, что в Sass есть собственная функция min(). CSS-функция min(), в результате, игнорируется. Кроме того, Sass не может выполнять вычисления, используя единицы измерения, между которыми нет чётко зафиксированной взаимосвязи.</p>
+
+<p>Например, взаимосвязь единиц измерения cm и in определена чётко, поэтому Sass может найти результат функции min(20in, 50cm) и не выдаёт ошибку в том случае, если чем-то подобным воспользоваться в коде.</p>
+
+<p>То же самое происходит и с другими единицами измерения. Например, все угловые единицы измерения взаимосвязаны: 1turn, 1rad или 1grad всегда приводятся к одним и тем же значениям, выраженным в единицах измерения deg. То же самое справедливо, например, и в случае, когда 1s всегда равно 1000ms. 1kHz всегда равно 1000Hz, 1dppx всегда равно 96dpi, 1in всегда равно 96px. Именно поэтому Sass может преобразовывать друг в друга значения, выраженные в этих единицах измерения, и смешивать их в вычислениях, используемых в различных функциях, вроде собственной функции min().</p>
+
+<p>Но всё идёт не так, когда между единицами измерения нет чёткой взаимосвязи (как, например, выше, у em и vh).</p>
+
+<p>И такое происходит не только при использовании значений, выраженных в разных единицах измерения. Попытка использования функции calc() внутри min() тоже приводит к появлению ошибки. Если попробовать, в min(), поместить что-то вроде calc(20em + 7px), то выводится такая ошибка: calc(20em + 7px) is not a number for min.</p>
+
+<img src="img/articles/2020/2020-07-20-o-konfliktah-sass-i-sravnitelno-novyh-vozmozhnostej-css/3.png" alt="Сообщение об ошибке, возникающее при попытке использования calc() внутри min()">
+
+<p>Это сообщение выводится из-за того, что в Sass есть собственная функция min(). CSS-функция min(), в результате, игнорируется. Кроме того, Sass не может выполнять вычисления, используя единицы измерения, между которыми нет чётко зафиксированной взаимосвязи.</p>
+
+<p>Например, взаимосвязь единиц измерения cm и in определена чётко, поэтому Sass может найти результат функции min(20in, 50cm) и не выдаёт ошибку в том случае, если чем-то подобным воспользоваться в коде.</p>
+
+<p>То же самое происходит и с другими единицами измерения. Например, все угловые единицы измерения взаимосвязаны: 1turn, 1rad или 1grad всегда приводятся к одним и тем же значениям, выраженным в единицах измерения deg. То же самое справедливо, например, и в случае, когда 1s всегда равно 1000ms. 1kHz всегда равно 1000Hz, 1dppx всегда равно 96dpi, 1in всегда равно 96px. Именно поэтому Sass может преобразовывать друг в друга значения, выраженные в этих единицах измерения, и смешивать их в вычислениях, используемых в различных функциях, вроде собственной функции min().</p>
+
+<p>Но всё идёт не так, когда между единицами измерения нет чёткой взаимосвязи (как, например, выше, у em и vh).</p>
+
+<p>И такое происходит не только при использовании значений, выраженных в разных единицах измерения. Попытка использования функции calc() внутри min() тоже приводит к появлению ошибки. Если попробовать, в min(), поместить что-то вроде calc(20em + 7px), то выводится такая ошибка: calc(20em + 7px) is not a number for min.</p>
+
+<img src="img/articles/2020/2020-07-20-o-konfliktah-sass-i-sravnitelno-novyh-vozmozhnostej-css/4.png" alt="Сообщение об ошибке, возникающее при попытке использования calc() внутри min()">
+
+<p>Ещё одна проблема появляется в ситуации, когда пытаются использовать CSS-переменную или результат работы математических CSS-функций (вроде calc(), min(), max()) в CSS-фильтрах наподобие invert().</p>
+
+<p>Вот сообщение об ошибке, которую можно увидеть в подобных обстоятельствах: $color: 'var(--p, 0.85) is not a color for invert</p>
+
+<img src="img/articles/2020/2020-07-20-o-konfliktah-sass-i-sravnitelno-novyh-vozmozhnostej-css/5.png" alt="Использование var() в filter: invert() приводит к ошибке">
+
+<h2>Решение проблемы</h2>
+
+<p>Эту проблему можно решить, если вспомнить о том, что Sass чувствителен к регистру, а CSS — нет.</p>
+
+<p>Это означает, что можно написать что-то вроде Min(20em, 50vh) и Sass не распознает в этой конструкции свою собственную функцию min(). Никаких ошибок при этом выдано не будет. Эта конструкция будет представлять собой правильно сформированный CSS-код, который работает именно так, как ожидается. Аналогично, избавиться от проблем с другими функциями можно, нестандартным образом записывая их имена: HSL(), HSLA(), RGB(), RGBA(), Invert().</p>
+    
+<p>Если говорить о градиентах, то тут я обычно использую такую форму: linear-Gradient() и radial-Gradient(). Делаю я это из-за того, что такая запись близка к именам, используемым в SVG, но в данной ситуации сработает и любое другое подобное имя, включающее в себя хотя бы одну заглавную букву.</p>
+    
+
+						</div>
+
+						<div class="likely-on-page">
+							<div class="likely" data-url="https://risponder.ru/blog/articles/2020-07-20-o-konfliktah-sass-i-sravnitelno-novyh-vozmozhnostej-css.html" data-media="https://risponder.ru/img/articles/2020/2020-07-20-o-konfliktah-sass-i-sravnitelno-novyh-vozmozhnostej-css/1.jpg" data-title="О конфликтах Sass и сравнительно новых возможностей CSS">
+								<div class="vkontakte" title="Поделиться Вконтакте">Вконтакте</div>
+								<div class="facebook" title="Поделиться в Facebook">Facebook</div>
+								<div class="twitter" title="Поделиться в Twitter">Twitter</div>
+								<div class="odnoklassniki" title="Класснуть">Одноклассники</div>
+							</div>
+						</div>
+
+						<div class="ad article-top-ad">
+							<!-- Гориз -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3300515980317605"
+     data-ad-slot="6609240498"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+						</div>
+
+						<div class="read-more">
+							<div class="read-more-header">Читать еще:</div>
+							<ul>
+								
+								
+								
+									
+									<li><a href="/blog/articles/2020-07-22-ustrojstvo-cpython-doklad-yandeksa.html">Устройство CPython. Доклад Яндекса</a></li>
+									
+								
+									
+								
+									
+									<li><a href="/blog/articles/2020-07-19-stoit-li-perehodit-s-python-na-nim.html">Стоит ли переходить с Python на Nim ради производительности?</a></li>
+									
+								
+									
+									<li><a href="/blog/articles/2020-07-18-lenivaya-podgruzka-perevodov-s-angular.html">Ленивая подгрузка переводов с Angular</a></li>
+									
+								
+							</ul>
+						</div>
+
+						<div class="comments">
+
+							<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://risponder.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+						</div>
+					</article>
+
+				</div>
+
+				<div class="col-md-4">
+					<aside class="main-aside">
+    <div class="aside-box">
+<!-- Вертик -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3300515980317605"
+     data-ad-slot="1165342127"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </div>
+
+    <div class="aside-box">
+<div class="latest-box">
+    <div class="lb-header">Последние статьи:</div>
+    
+    <div class="lb-list">
+
+        <div class="lb-item">
+            <a href="blog/it-news/" class="lb-catname">Новости IT</a>
+            <div class="lb-body">
+                
+                <a href="/blog/it-news/2020-08-04-v-darknet-prosochilas-baza-po-popravkam-v-konstituciyu.html" class="lb-item-header">
+                    В даркнет просочилась база по поправкам в конституцию
+                </a>
+                <div class="lb-footer">
+                    <div class="item-comments" title="Кол-во комментариев">
+                        <i class="fa fa-comments"></i>
+                        <a href="/blog/it-news/2020-08-04-v-darknet-prosochilas-baza-po-popravkam-v-konstituciyu.html#disqus_thread" class="item-comments-count"></a>
+                        <span class="date">04/08/2020</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="lb-item">
+            <a href="blog/courses/" class="lb-catname">Курсы</a>
+            <div class="lb-body">
+                
+                <a href="/blog/courses/2020-07-24-polnyj-kurs-po-javascript-react-s-nulya-do-rezultata.html" class="lb-item-header">
+                    Полный курс по JavaScript + React - с нуля до результата
+                </a>
+                <div class="lb-footer">
+                    <div class="item-comments" title="Кол-во комментариев">
+                        <i class="fa fa-comments"></i>
+                        <a href="/blog/courses/2020-07-24-polnyj-kurs-po-javascript-react-s-nulya-do-rezultata.html#disqus_thread" class="item-comments-count"></a>
+                        <span class="date">24/07/2020</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="lb-item">
+            <a href="blog/articles/" class="lb-catname">Статьи</a>
+            <div class="lb-body">
+                
+                <a href="/blog/articles/2020-07-22-ustrojstvo-cpython-doklad-yandeksa.html" class="lb-item-header">
+                    Устройство CPython. Доклад Яндекса
+                </a>
+                <div class="lb-footer">
+                    <div class="item-comments" title="Кол-во комментариев">
+                        <i class="fa fa-comments"></i>
+                        <a href="/blog/articles/2020-07-22-ustrojstvo-cpython-doklad-yandeksa.html#disqus_thread" class="item-comments-count"></a>
+                        <span class="date">22/07/2020</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="lb-item">
+            <a href="blog/books/" class="lb-catname">Книги</a>
+            <div class="lb-body">
+                
+                <a href="/blog/books/2020-07-24-razvyornutoe-rukovodstvo-po-sassscss.html" class="lb-item-header">
+                    Развёрнутое руководство по Sass/SCSS
+                </a>
+                <div class="lb-footer">
+                    <div class="item-comments" title="Кол-во комментариев">
+                        <i class="fa fa-comments"></i>
+                        <a href="/blog/books/2020-07-24-razvyornutoe-rukovodstvo-po-sassscss.html#disqus_thread" class="item-comments-count"></a>
+                        <span class="date">24/07/2020</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="lb-item">
+            <a href="blog/soft/" class="lb-catname">Софт</a>
+            <div class="lb-body">
+                
+                <a href="/blog/soft/2020-07-19-browserautomationstudio-avtomatizaciya-dejstvij-v-brauzere.html" class="lb-item-header">
+                    Browser Automation Studio - автоматизация действий в браузере
+                </a>
+                <div class="lb-footer">
+                    <div class="item-comments" title="Кол-во комментариев">
+                        <i class="fa fa-comments"></i>
+                        <a href="/blog/soft/2020-07-19-browserautomationstudio-avtomatizaciya-dejstvij-v-brauzere.html#disqus_thread" class="item-comments-count"></a>
+                        <span class="date">19/07/2020</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div> 
+</div>
+    </div>
+
+    <div class="aside-box">
+<!-- VK Widget -->
+<div id="vk_groups"></div>
+
+    </div>
+    <div class="aside-box">
+<div class="latest-comments">
+	<div class="lb-header">Последние комментарии:</div>
+	<script type="text/javascript" src="https://risponder.disqus.com/recent_comments_widget.js?num_items=4&amp;hide_avatars=0&amp;avatar_size=26&amp;excerpt_length=150"></script>
+</div>
+    </div>
+</aside>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+<footer class="main-footer">
+    <div class="container">
+        <nav class="main-menu footer-menu">
+<ul>
+    <li><a href="blog/courses/">Курсы</a></li>
+    <li><a href="blog/articles/">Статьи</a></li>
+    <li><a href="blog/it-news/">Новости it</a></li>
+    <li><a href="blog/books/">Книги</a></li>
+    <li><a href="blog/soft/">Софт</a></li>
+    <li><a href="about.html">О сайте</a></li>
+</ul>
+        </nav>
+
+        <nav class="soc">
+            <ul>
+<li><a href="https://vk.com/risponder"><i class="fa fa-vk"></i></a></li> <li><a href="#"><i class="fa fa-instagram"></i></a></li> <li><a href="#"><i class="fa fa-facebook-f"></i></a></li> <li><a href="#"><i class="fa fa-odnoklassniki"></i></a></li> <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+<footer class="bottom-footer">
+    <div class="container text-center">
+        <div class="footer-copy">2020 © <span class="logo-footer logo-liter">Risponder</span></div>
+        <p>Копирование контента и размещение на других сайтах запрещено</p>
+    </div>
+</footer>
+
+<script src="js/app.min.js"></script>
+<script id="dsq-count-scr" src="//risponder.disqus.com/count.js" async></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+<script type="text/javascript">
+    VK.Widgets.Group("vk_groups", {mode: 0, width: 'auto', height: '300', color2: '202222', color3: '202222'}, 197440039);
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Risponder</title>
+		<description>Всё о мире информационных технологий. Новости, статьи, курсы, книги и многое другое...</description>
+		<link>https://risponder.ru</link>
+		<atom:link href="https://risponder.ru/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>В версии Telegram для iOS появились видеозвонки</title>
+				<description><![CDATA[
+					<a href="https://risponder.ru/blog/it-news/2020-07-27-v-versii-telegram-dlya-ios-poyavilis-videozvonki.html"><img width="100%" src="https://risponder.ruimg/it-news/2020/2020-07-27-v-versii-telegram-dlya-ios-poyavilis-videozvonki/1.jpg"></a>
+					В приложении Telegкam для iOS появились видеозвонки. Однако для осуществления звонка нужно, чтобы оба собеседника активировали функцию.
+					]]></description>
+				<pubDate>Mon, 27 Jul 2020 00:00:00 +0500</pubDate>
+				<link>https://risponder.ru/blog/it-news/2020-07-27-v-versii-telegram-dlya-ios-poyavilis-videozvonki.html</link>
+				<guid isPermaLink="true">https://risponder.ru/blog/it-news/2020-07-27-v-versii-telegram-dlya-ios-poyavilis-videozvonki.html</guid>
+			</item>
+		
+			<item>
+				<title>Мяу-атака удалила уже 4300 баз данных</title>
+				<description><![CDATA[
+					<a href="https://risponder.ru/blog/it-news/2020-07-27-myau-ataka-udalila-uzhe-4300-baz-dannyh.html"><img width="100%" src="https://risponder.ruimg/it-news/2020/2020-07-27-myau-ataka-udalila-uzhe-4300-baz-dannyh/1.jpg"></a>
+					Тысячи незащищённых баз данных, выставленных на всеобщее обозрение в интернете, стали мишенью автоматизированной атаки Meow («мяу»), которая уничтожает данные без каких-либо объяснений, пишет Bleeping Computer.
+					]]></description>
+				<pubDate>Mon, 27 Jul 2020 00:00:00 +0500</pubDate>
+				<link>https://risponder.ru/blog/it-news/2020-07-27-myau-ataka-udalila-uzhe-4300-baz-dannyh.html</link>
+				<guid isPermaLink="true">https://risponder.ru/blog/it-news/2020-07-27-myau-ataka-udalila-uzhe-4300-baz-dannyh.html</guid>
+			</item>
+		
+			<item>
+				<title>Развёрнутое руководство по Sass/SCSS</title>
+				<description><![CDATA[
+					<a href="https://risponder.ru/blog/books/2020-07-24-razvyornutoe-rukovodstvo-po-sassscss.html"><img width="100%" src="https://risponder.ruimg/books/2020/2020-07-24-razvyornutoe-rukovodstvo-po-sassscss/1.jpg"></a>
+					Данная мини-книга поможет вам полностью ознакомиться с препроцессорами sass/scss, без которых в современном веб-программировании просто невозможно представить жизнь
+					]]></description>
+				<pubDate>Fri, 24 Jul 2020 00:00:00 +0500</pubDate>
+				<link>https://risponder.ru/blog/books/2020-07-24-razvyornutoe-rukovodstvo-po-sassscss.html</link>
+				<guid isPermaLink="true">https://risponder.ru/blog/books/2020-07-24-razvyornutoe-rukovodstvo-po-sassscss.html</guid>
+			</item>
+		
+			<item>
+				<title>Полный курс по JavaScript + React - с нуля до результата</title>
+				<description><![CDATA[
+					<a href="https://risponder.ru/blog/courses/2020-07-24-polnyj-kurs-po-javascript-react-s-nulya-do-rezultata.html"><img width="100%" src="https://risponder.ruimg/courses/2020/2020-07-24-polnyj-kurs-po-javascript-react-s-nulya-do-rezultata/1.jpg"></a>
+					Этот курс направлен на подробное изучение JavaScript без воды, но главное - немедленное применение его на практике. Это значит, что вы получите материал для работы и мы вместе будем создавать реальные проекты шаг за шагом.
+					]]></description>
+				<pubDate>Fri, 24 Jul 2020 00:00:00 +0500</pubDate>
+				<link>https://risponder.ru/blog/courses/2020-07-24-polnyj-kurs-po-javascript-react-s-nulya-do-rezultata.html</link>
+				<guid isPermaLink="true">https://risponder.ru/blog/courses/2020-07-24-polnyj-kurs-po-javascript-react-s-nulya-do-rezultata.html</guid>
+			</item>
+		
+			<item>
+				<title>SpaceX впервые успешно вернула на Землю две половины обтекателя Falcon 9</title>
+				<description><![CDATA[
+					<a href="https://risponder.ru/blog/it-news/2020-07-23-spacex-vpervye-uspeshno-vernula-na-zemlyu-obtekatelya-falcon-9.html"><img width="100%" src="https://risponder.ruimg/it-news/2020/2020-07-23-spacex-vpervye-uspeshno-vernula-na-zemlyu-obtekatelya-falcon-9/1.jpg"></a>
+					SpaceX впервые успешно вернула на Землю две половины обтекателя Falcon 9 и побила рекорд по использованию ракеты
+					]]></description>
+				<pubDate>Thu, 23 Jul 2020 00:00:00 +0500</pubDate>
+				<link>https://risponder.ru/blog/it-news/2020-07-23-spacex-vpervye-uspeshno-vernula-na-zemlyu-obtekatelya-falcon-9.html</link>
+				<guid isPermaLink="true">https://risponder.ru/blog/it-news/2020-07-23-spacex-vpervye-uspeshno-vernula-na-zemlyu-obtekatelya-falcon-9.html</guid>
+			</item>
+		
+			<item>
+				<title>Крупнейшие операторы связи проведут тестирование инновационных разработок</title>
+				<description><![CDATA[
+					<a href="https://risponder.ru/blog/it-news/2020-07-23-krupnejshie-operatory-svyazi-provedut-testirovanie-razrabotok.html"><img width="100%" src="https://risponder.ruimg/it-news/2020/2020-07-23-krupnejshie-operatory-svyazi-provedut-testirovanie-razrabotok/1.jpg"></a>
+					К городской программе пилотного тестирования инноваций присоединились два крупнейших российских телекоммуникационных оператора — компании МТС и «МегаФон». В числе разработок, которые будут испытаны на новых площадках, — технологии искусственного интеллекта, дополненной и виртуальной реальности и решения для компьютерных игр
+					]]></description>
+				<pubDate>Thu, 23 Jul 2020 00:00:00 +0500</pubDate>
+				<link>https://risponder.ru/blog/it-news/2020-07-23-krupnejshie-operatory-svyazi-provedut-testirovanie-razrabotok.html</link>
+				<guid isPermaLink="true">https://risponder.ru/blog/it-news/2020-07-23-krupnejshie-operatory-svyazi-provedut-testirovanie-razrabotok.html</guid>
+			</item>
+		
+			<item>
+				<title>Курс HTML5 и CSS3 c нуля до результата</title>
+				<description><![CDATA[
+					<a href="https://risponder.ru/blog/courses/2020-07-23-kurs-html5-i-css3-ot-nulya-do-rezultata.html"><img width="100%" src="https://risponder.ruimg/courses/2020/2020-07-23-kurs-html5-i-css3-ot-nulya-do-rezultata/1.jpg"></a>
+					Самый простой способ изучить современный веб-дизайн, HTML5 и CSS3 шаг за шагом с нуля! Благодаря этому руководству ты сможешь начать свою карьеру в веб-разработке уже сегодня.
+					]]></description>
+				<pubDate>Thu, 23 Jul 2020 00:00:00 +0500</pubDate>
+				<link>https://risponder.ru/blog/courses/2020-07-23-kurs-html5-i-css3-ot-nulya-do-rezultata.html</link>
+				<guid isPermaLink="true">https://risponder.ru/blog/courses/2020-07-23-kurs-html5-i-css3-ot-nulya-do-rezultata.html</guid>
+			</item>
+		
+			<item>
+				<title>Командная строка Linux. Полное руководство</title>
+				<description><![CDATA[
+					<a href="https://risponder.ru/blog/books/2020-07-22-komandnaya-stroka-linux-polnoe-rukovodstvo.html"><img width="100%" src="https://risponder.ruimg/books/2020/2020-07-22-komandnaya-stroka-linux-polnoe-rukovodstvo/1.jpg"></a>
+					Уильям Шоттс знакомит вас с истинной философией Linux. Вы уже знакомы с Linux, и настала пора нырнуть поглубже и познакомиться с возможностями командной строки. Командная строка всегда с вами, от первого знакомства до написания полноценных программ в Bash — самой популярной оболочке Linux. Познакомьтесь с основами навигации по файловой системе, настройки среды, последовательностями команд, поиском по шаблону и многим другим.
+					]]></description>
+				<pubDate>Wed, 22 Jul 2020 00:00:00 +0500</pubDate>
+				<link>https://risponder.ru/blog/books/2020-07-22-komandnaya-stroka-linux-polnoe-rukovodstvo.html</link>
+				<guid isPermaLink="true">https://risponder.ru/blog/books/2020-07-22-komandnaya-stroka-linux-polnoe-rukovodstvo.html</guid>
+			</item>
+		
+			<item>
+				<title>Атака «BadPower» позволяет вызвать возгорание устройства</title>
+				<description><![CDATA[
+					<a href="https://risponder.ru/blog/it-news/2020-07-22-ataka-badpower-pozvolyaet-vyzvat-vozgoranie-ustrojstva.html"><img width="100%" src="https://risponder.ruimg/it-news/2020/2020-07-22-ataka-badpower-pozvolyaet-vyzvat-vozgoranie-ustrojstva/1.jpg"></a>
+					Исследователи информационной безопасности из Tencent сообщили о новом типе атак «BadPower». В отчёте сказано, что благодаря внесению некоторых изменений в прошивки зарядных устройств с поддержкой «быстрой зарядки» возможно вызывать повреждение подключенных к ним устройств, что может привести к выходу из строя, расплавлению частей или даже возгоранию устройства
+					]]></description>
+				<pubDate>Wed, 22 Jul 2020 00:00:00 +0500</pubDate>
+				<link>https://risponder.ru/blog/it-news/2020-07-22-ataka-badpower-pozvolyaet-vyzvat-vozgoranie-ustrojstva.html</link>
+				<guid isPermaLink="true">https://risponder.ru/blog/it-news/2020-07-22-ataka-badpower-pozvolyaet-vyzvat-vozgoranie-ustrojstva.html</guid>
+			</item>
+		
+			<item>
+				<title>Устройство CPython. Доклад Яндекса</title>
+				<description><![CDATA[
+					<a href="https://risponder.ru/blog/articles/2020-07-22-ustrojstvo-cpython-doklad-yandeksa.html"><img width="100%" src="https://risponder.ruimg/articles/2020/2020-07-22-ustrojstvo-cpython-doklad-yandeksa/1.jpg"></a>
+					Мы публикуем конспект вступительной лекции видеокурса «Бэкенд-разработка на Python». В ней Егор Овчаренко egorovcharenko, тимлид в Яндекс.Такси, рассказал о внутреннем устройстве интерпретатора CPython.
+					]]></description>
+				<pubDate>Wed, 22 Jul 2020 00:00:00 +0500</pubDate>
+				<link>https://risponder.ru/blog/articles/2020-07-22-ustrojstvo-cpython-doklad-yandeksa.html</link>
+				<guid isPermaLink="true">https://risponder.ru/blog/articles/2020-07-22-ustrojstvo-cpython-doklad-yandeksa.html</guid>
+			</item>
+		
+	</channel>
+</rss>

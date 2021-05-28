@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /index.html
+Host: risponder.ru
+Sitemap: https://risponder.ru/sitemap.xml
